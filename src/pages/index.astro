@@ -1,0 +1,27 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import LibraryHeader from '../components/LibraryHeader.astro';
+import GradeLegend from '../components/GradeLegend.astro';
+import ActivityCard from '../components/ActivityCard.astro';
+import activityData from '../data/activities.json';
+import { prepareActivities } from '../lib/activities.js';
+
+const activities = prepareActivities(activityData);
+---
+
+<PageLayout>
+  <main class="page">
+    <LibraryHeader />
+    <section class="activities" aria-labelledby="activities-title">
+      <h2 id="activities-title">Próximas actividades</h2>
+      <GradeLegend />
+      {activities.length > 0 ? (
+        <ol class="activity-list">
+          {activities.map((activity) => <ActivityCard activity={activity} />)}
+        </ol>
+      ) : (
+        <p class="empty-state">Pronto anunciaremos nuevas actividades.</p>
+      )}
+    </section>
+  </main>
+</PageLayout>

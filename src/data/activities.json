@@ -1,0 +1,59 @@
+[
+  {
+    "id": "jardines-de-rosa-3k",
+    "title": "Jardines de Rosa 3K",
+    "date": { "year": null, "month": 10, "day": 16 },
+    "time": "7:15 a. m.",
+    "location": "Escuela Superior Jardines de Ponce",
+    "audience": "all",
+    "cost": "$10",
+    "presenter": null,
+    "description": "Premios/Medallas para las primeras 300 personas",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": "iniciacion-club-asistentes-biblioteca",
+    "title": "Iniciación del Club de Asistentes de Biblioteca",
+    "date": { "year": null, "month": 10, "day": 23 },
+    "time": "9:00 a. m.",
+    "location": "Cancha de baloncesto de la Escuela SJDP",
+    "audience": "all",
+    "cost": null,
+    "presenter": null,
+    "description": "Acompáñanos a dar inicio al Club de Asistentes de Biblioteca. ¡Motiven a sus compañeros a ir, traigan al corrillo para apoyar a los integrantes de este nuevo club!",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": "packing-party-operation-christmas-child",
+    "title": "Packing Party Operation Christmas Child (Donaciones)",
+    "date": { "year": null, "month": 11, "day": 13 },
+    "time": null,
+    "location": "Biblioteca SJDP",
+    "audience": "all",
+    "cost": null,
+    "presenter": null,
+    "description": "Escoge un niño o una niña de entre 2 y 14 años para hacer una donación de artículos. ¡Juntos llevaremos alegrías a los niños de nuestras comunidades!",
+    "moreInfo": {
+      "text": "Para más información, visita nuestro Instagram",
+      "label": "@biblioteca.sjdp",
+      "url": "https://www.instagram.com/biblioteca.sjdp/"
+    },
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": "taller-onedrive-teleprompter",
+    "title": "Taller práctico de OneDrive y teleprompter",
+    "date": null,
+    "time": "12:00 p. m.",
+    "location": "Biblioteca SJDP",
+    "audience": "12",
+    "cost": null,
+    "presenter": "Prof. Verónica E. Cortés Cruz",
+    "description": "Herramientas para el trabajo académico",
+    "image": null,
+    "imageAlt": ""
+  }
+]

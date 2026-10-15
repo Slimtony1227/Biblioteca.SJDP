@@ -1,0 +1,56 @@
+---
+import { audiences, formatActivityDate } from '../lib/activities.js';
+
+const { activity } = Astro.props;
+const audience = audiences.find((item) => item.id === activity.audience);
+const date = formatActivityDate(activity.date);
+const DateTag = date?.datetime ? 'time' : 'span';
+const imageUrl = activity.image
+  ? `${import.meta.env.BASE_URL}${activity.image.replace(/^\//, '')}`
+  : null;
+---
+
+<li>
+  <article
+    class="activity-card"
+    style={{ '--audience-color': audience.color }}
+    aria-labelledby={`${activity.id}-title`}
+  >
+    <div class="activity-meta">
+      {date ? (
+        <DateTag class="activity-date" datetime={date.datetime}>
+          <span aria-hidden="true">{date.short}</span>
+          <span class="visually-hidden">{date.full}</span>
+        </DateTag>
+      ) : (
+        <p class="activity-date activity-pending">Próximamente</p>
+      )}
+      <p class="activity-audience">{audience.cardLabel}</p>
+    </div>
+
+    <div class:list={['activity-content', { 'has-image': imageUrl }]}>
+      {imageUrl && (
+        <div class="postage-frame">
+          <img src={imageUrl} alt={activity.imageAlt} width="96" height="112" loading="lazy" decoding="async" />
+        </div>
+      )}
+
+      <div class="activity-copy">
+        <h3 id={`${activity.id}-title`}>{activity.title}</h3>
+        {activity.time && <p class="activity-time">{activity.time}</p>}
+        <dl class="activity-details">
+          <div><dt>Lugar:</dt><dd>{activity.location}</dd></div>
+          {activity.cost && <div><dt>Costo:</dt><dd>{activity.cost}</dd></div>}
+        </dl>
+        {activity.presenter && <p class="activity-presenter">{activity.presenter}</p>}
+        {activity.description && <p class="activity-description">{activity.description}</p>}
+        {activity.moreInfo && (
+          <p class="activity-more-info">
+            {activity.moreInfo.text}{' '}
+            <a href={activity.moreInfo.url} target="_blank" rel="noopener noreferrer">{activity.moreInfo.label}</a>.
+          </p>
+        )}
+      </div>
+    </div>
+  </article>
+</li>

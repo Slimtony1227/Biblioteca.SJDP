@@ -1,0 +1,12 @@
+---
+import { audiences } from '../lib/activities.js';
+---
+
+<ul class="grade-legend" aria-label="Colores por grado">
+  {audiences.map((audience) => (
+    <li>
+      <span class="grade-dot" style={{ backgroundColor: audience.color }} aria-hidden="true"></span>
+      <span>{audience.label}</span>
+    </li>
+  ))}
+</ul>

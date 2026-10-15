@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+import FooterSignature from '../components/FooterSignature.astro';
+
+const schoolLogoUrl = `${import.meta.env.BASE_URL}images/school-logo.svg`;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Consulta las próximas actividades de la Biblioteca Escolar Superior Jardines de Ponce: fechas, horarios, lugar y grados participantes." />
+    <meta name="theme-color" content="#FFF9EF" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Biblioteca Escolar Superior Jardines de Ponce</title>
+  </head>
+  <body>
+    <div class="school-watermark" aria-hidden="true">
+      <picture>
+        <source type="image/png" srcset={`${import.meta.env.BASE_URL}images/school-watermark.png`} />
+        <img src={schoolLogoUrl} width="447" height="447" alt="" decoding="async" fetchpriority="low" />
+      </picture>
+    </div>
+    <slot />
+    <FooterSignature />
+  </body>
+</html>
