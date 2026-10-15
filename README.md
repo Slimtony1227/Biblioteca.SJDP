@@ -157,6 +157,7 @@ Open [src/data/activities.json](./src/data/activities.json). The file is an arra
 | `time` | Display text such as `"9:00 a. m."` or `"12:00 p. m."`; use `null` to omit it. There is no time-zone conversion. |
 | `location` | Required place name. The card adds **Lugar:** automatically. |
 | `audience` | Required string: `"9"`, `"10"`, `"11"`, `"12"`, or `"all"`. It controls the grade label and outline color. Keep quotation marks around grade numbers. |
+| `audienceLabel` | Optional nonempty text replacing the card's grade label for a specific group, such as `"Integrantes del Club"`. The outline still follows `audience`; the grade-color key is unchanged. Use `null` or omit it for the default grade label. |
 | `cost` | Optional display text such as `"$10"`; use `null` to omit it. The card adds **Costo:** automatically. |
 | `presenter` | Optional presenter name; use `null` to omit it. |
 | `description` | Optional short description; use `null` or omit the field when there is none. |
@@ -341,7 +342,7 @@ Build and asset checks do not replace Safari/Chrome or physical-phone layout tes
 ## Current content and verification
 
 - Jardines de Rosa 3K: October 16, year unconfirmed; all grades; 7:15 a. m.; $10.
-- Iniciación del Club de Asistentes de Biblioteca: October 23, year unconfirmed; all grades; 9:00 a. m.; Cancha de baloncesto de la Escuela SJDP; supplied invitation to bring classmates and support the new club.
+- Iniciación del Club de Asistentes de Biblioteca: October 23, year unconfirmed; club members only; 9:00 a. m.; Cancha de baloncesto de la Escuela SJDP; supplied invitation to bring 1 parent and support the new club members. The description includes “(Solo para integrantes del Club)” and the audience label reads “Integrantes del Club”.
 - Packing Party Operation Christmas Child (Donaciones): November 13, year unconfirmed; all grades; Biblioteca SJDP; donations for children ages 2–14; linked Instagram account for more information. No time was supplied.
 - OneDrive/teleprompter workshop: date pending; 12th grade; noon; supplied presenter and description retained. No price is implied.
 - Production build completed successfully. The generated HTML contains the four activities, all five legend entries, Spanish copy, optional-field omissions, and no browser script.

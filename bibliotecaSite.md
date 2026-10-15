@@ -234,7 +234,7 @@ Copy normalization: capitalization, accents, and obvious spelling errors are cle
 
 No time, cost, presenter, or image was supplied. Store time as null and omit it from the card. The date keeps a null year, following the existing date convention. Display this event after the October 16 race and before the undated workshop. The optional `moreInfo` object in the JSON keeps the supplied sentence and clickable account label alongside the event data; no package or integration was added.
 
-#### Activity 4 — all grades (added 2026-10-15)
+#### Activity 4 — club members (added 2026-10-15)
 
 | Field | Supplied content |
 | --- | --- |
@@ -242,11 +242,11 @@ No time, cost, presenter, or image was supplied. Store time as null and omit it 
 | Date | 23 de octubre; no year supplied |
 | Time | 9:00 a. m. |
 | Location | Cancha de baloncesto de la Escuela SJDP |
-| Audience | Todos los grados; confirmed by the user |
-| Short description | Acompáñanos a dar inicio al Club de Asistentes de Biblioteca. ¡Motiven a sus compañeros a ir, traigan al corrillo para apoyar a los integrantes de este nuevo club! |
+| Audience | Integrantes del Club; the user's latest instruction restricts participation to club members |
+| Short description | Acompáñanos a dar inicio al Club de Asistentes de Biblioteca. ¡Traigan a 1 padre para apoyar a los nuevos integrantes de este nuevo club! (Solo para integrantes del Club) |
 | Border | Soft black `#262626` |
 
-The user subsequently supplied the short description above; retain its informal “corrillo” wording with corrected accents and punctuation. No cost, presenter, or image was supplied. Keep a null year, following the existing convention. Display this event after the October 16 race and before the November 13 Packing Party. No dependencies or stack changes were needed.
+The user revised the short description to invite students to bring 1 parent to support the new club members, then added “(Solo para integrantes del Club)”. The optional `audienceLabel` displays “Integrantes del Club” in place of the earlier “Todos los grados”; `audience: "all"` retains the black outline because no specific grade was selected. The current wording above replaces the earlier invitation to classmates. Correct obvious typos, accents, and punctuation while retaining the supplied meaning. No cost, presenter, or image was supplied. Keep a null year, following the existing convention. Display this event after the October 16 race and before the November 13 Packing Party. No dependencies or stack changes were needed.
 
 ### Update workflow and remaining details
 
@@ -349,7 +349,7 @@ Current decisions log:
 | Logo asset | Found and inspected |
 | Instagram identity/bio | Verified in public browser view |
 | Instagram header link | User requested; top-right inline SVG links to the official account in a new tab |
-| Upcoming event data | Four activities supplied directly by user; October 23 club initiation for all grades; November 13 Packing Party with Instagram link; workshop date pending |
+| Upcoming event data | Four activities supplied directly by user; October 23 initiation restricted to club members; November 13 Packing Party with Instagram link; workshop date pending |
 | Visual direction | Concept accepted with old-school/DIY imagery and no decorative side strokes |
 | Welcome message and language | Spanish confirmed; follow the concept's header/greeting closely |
 | Typography | Bitcount Ink via the user-supplied Google Fonts stylesheet for “Próximas actividades” only; system sans-serif elsewhere |

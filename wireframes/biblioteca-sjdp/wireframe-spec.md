@@ -42,11 +42,11 @@ Repeated item 1:
 Repeated item 2 (added 2026-10-15):
 
 - Date: “23 OCT” (accessible/full display equivalent: “23 de octubre”; no year supplied).
-- Audience: “Todos los grados”; confirmed by the user.
+- Audience: “Integrantes del Club”; the user's latest instruction restricts participation to club members. Retain the black outline and existing grade-color key.
 - Title: “Iniciación del Club de Asistentes de Biblioteca”.
 - Time: “9:00 a. m.”
 - Location: “Lugar: Cancha de baloncesto de la Escuela SJDP”.
-- Description: “Acompáñanos a dar inicio al Club de Asistentes de Biblioteca. ¡Motiven a sus compañeros a ir, traigan al corrillo para apoyar a los integrantes de este nuevo club!”
+- Description: “Acompáñanos a dar inicio al Club de Asistentes de Biblioteca. ¡Traigan a 1 padre para apoyar a los nuevos integrantes de este nuevo club! (Solo para integrantes del Club)”
 - No cost, presenter, or image was supplied; omit those fields from the rendered card. Use the all-grades black outline.
 
 Repeated item 3 (added 2026-10-15):

@@ -19,9 +19,10 @@
     "time": "9:00 a. m.",
     "location": "Cancha de baloncesto de la Escuela SJDP",
     "audience": "all",
+    "audienceLabel": "Integrantes del Club",
     "cost": null,
     "presenter": null,
-    "description": "Acompáñanos a dar inicio al Club de Asistentes de Biblioteca. ¡Motiven a sus compañeros a ir, traigan al corrillo para apoyar a los integrantes de este nuevo club!",
+    "description": "Acompáñanos a dar inicio al Club de Asistentes de Biblioteca. ¡Traigan a 1 padre para apoyar a los nuevos integrantes de este nuevo club! (Solo para integrantes del Club)",
     "image": null,
     "imageAlt": ""
   },

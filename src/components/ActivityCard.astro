@@ -25,7 +25,7 @@ const imageUrl = activity.image
       ) : (
         <p class="activity-date activity-pending">Próximamente</p>
       )}
-      <p class="activity-audience">{audience.cardLabel}</p>
+      <p class="activity-audience">{activity.audienceLabel ?? audience.cardLabel}</p>
     </div>
 
     <div class:list={['activity-content', { 'has-image': imageUrl }]}>

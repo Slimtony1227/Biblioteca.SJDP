@@ -37,7 +37,7 @@ export function prepareActivities(entries) {
       }
     }
 
-    for (const field of ['time', 'description']) {
+    for (const field of ['time', 'description', 'audienceLabel']) {
       if (entry[field] != null && (typeof entry[field] !== 'string' || !entry[field].trim())) {
         throw new Error(`Activity ${entry.id} needs a nonempty ${field} or null.`);
       }
